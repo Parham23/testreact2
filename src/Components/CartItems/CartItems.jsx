@@ -7,12 +7,12 @@ export const CartItems = () => {
   return (
     <div className='cartitems'>
         <div className="cartitems-format-main">
-            <p>Products</p>
-            <p>Title</p>
-            <p>Price</p>
-            <p>Quantity</p>
-            <p>Total</p>
-            <p>Remove</p>
+            <p>محصولات</p>
+            <p>تیتر</p>
+            <p>قیمت</p>
+            <p>تعداد</p>
+            <p>جمع کل</p>
+            <p>حذف</p>
         </div>
         <hr />
         {all_product.map((e)=>{
@@ -36,30 +36,30 @@ export const CartItems = () => {
         })}
         <div className="cartitems-down">
             <div className="cartitems-total">
-                <h1>Cart Total</h1>
+                <h1>کلیه مبالغ</h1>
                 <div>
                     <div className="cartitems-total-item">
-                        <p>Subtotal</p>
+                        <p>قیمت کل محصولات</p>
                         <p>${getTotalCartAmount()}</p>
                     </div>
                     <hr />
                     <div className="cartitems-total-item">
-                      <p>Shipping Fee</p>
-                      <p>Free</p>  
+                      <p>هزینه ارسال</p>
+                      <p>رایگان</p>  
                     </div>
                     <hr />
                     <div className="cartitems-total-item">
-                        <h3>Total</h3>
+                        <h3>هزینه کل</h3>
                         <h3>${getTotalCartAmount()}</h3>
                     </div>
                 </div>
-                <button>PROCEED TO CHECKOUT</button>
+                <button>ادامه برای تکمیل خرید</button>
             </div>
             <div className="cartitems-promocode">
-                <p>If ypu have a promo code, Enter it here</p>
+                <p>اگر کد تخفیفی دارید اینجا وارد نمایید</p>
                 <div className="cartitems-promobox">
-                    <input type="text" placeholder='promo code' />
-                    <button>Submit</button>
+                    <input type="text" placeholder='کد تخفیف' />
+                    <button>ثبت</button>
                 </div>
             </div>
         </div>

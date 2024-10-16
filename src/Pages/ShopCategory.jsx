@@ -10,10 +10,10 @@ export const ShopCategory = (props) => {
       <img className='shopcategory-banner' src={props.banner} alt="" />
       <div className="shopcategory-indexSort">
         <p>
-          <span>Showing 1-12</span> out of 36 products
+          <span>نشان دادن 1-12</span> از 36 محصول
         </p>
         <div className="shopcategory-sort">
-          Sort by <img src={dropdown_icon} alt="" />
+          بر اساس <img src={dropdown_icon} alt="" />
           </div>
       </div>
       <div className="shopcategory-products">
@@ -27,7 +27,7 @@ export const ShopCategory = (props) => {
         })}
       </div>
       <div className="shopcategory-loadmore">
-        Explore more
+        موارد بیشتر
       </div>
     </div>
   )
